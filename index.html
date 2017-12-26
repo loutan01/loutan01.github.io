@@ -6,395 +6,484 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Andrew Loutfi's Personal Website">
+    <meta name="description" content="The Webpages of Andrew Omar Loutfi">
     <meta name="author" content="Andrew Omar Loutfi">
 
-    <title>Andrew's website</title>
+    <title>The Webpages of Andrew Omar Loutfi</title>
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://use.fontawesome.com/5658b3278a.css" rel="stylesheet" type="text/css">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="static/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 
+
+    <!-- Plugin CSS -->
+    <link href="static/css/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/freelancer.css" rel="stylesheet" type="text/css">
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top">
+
   <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
 
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">Andrew Omar Loutfi</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                     <li class="page-scroll">
-                        <a href="#about">About Me</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio Highlights</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#featuredProject">Featured Project</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Andrew Omar Loutfi</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Featured Projects</a>
+            </li>
+          </ul>
         </div>
-        <!-- /.container-fluid -->
+      </div>
     </nav>
 
     <!-- Header -->
     <header>
-        <div class="container" id="maincontent" tabindex="-1">
-            <div class="row">
-                <div class="col-lg-12">
-
-                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                      <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                      <div class="item active">
-                          <img src="img/bubbles.JPG" alt="selfie" >
-                      </div>
-
-                      <div class="item">
-                        <img src="img/cave.jpg" alt="selfie" >
-                      </div>
-
-                      <div class="item">
-                        <img src="img/IMG_3123.JPG" alt="selfie" >
-                      </div>
 
 
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                </div>
-
-                    <div class="intro-text">
-                        <h1 class="name">Andrew Omar Loutfi</h1>
-                        <hr class="star-light">
-                        <span class="skills">Software Engineer - Data Scientist - Human</span>
+            <div id="carouselIndicators" class= "masthead bg-primary carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <img class="img-fluid" src="static/img/carousel/image2.jpg" alt="First slide">
                     </div>
-                </div>
+                    <div class="carousel-item">
+                      <img class="img-fluid" src="static/img/carousel/image3.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="img-fluid" src="static/img/carousel/image4.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
             </div>
-        </div>
+
     </header>
 
     <!-- About Section -->
     <section class="success" id="about">
+
+
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About Me</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                <h1 class="text-uppercase mb-0">Andrew Omar Loutfi</h1>
+                <hr class="star-dark">
+                <br>
+                <h3 class="font-weight-light mb-0">Software Engineer - Data Scientist - Human</h3>
+              </div>
+
+          </div>
+
+          <br>
             <div class="row">
                   <p align="center">As a 2017 Luther College graduate with a Bachelor of Arts in Computer Science, I am passionate about new technologies, music, activism, the outdoors, and sustainability. In addition to being a creative and analytical problem solver, I enjoy working in team settings where I can use my organizational and leadership skills. Ultimately, I hope to use my skills to make the world a better place through code and big data.</p>
             </div>
+
+            <h4 align="right"> Get in Touch 👇 <br>
+            <a href = "mailto:loutfinator@gmail.com" class="highlight-link">loutfinator@gmail.com</a>
+          </h4>
+
         </div>
     </section>
 
     <!-- Portfolio Grid Section -->
-    <section class = "portfolio" id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio Highlights</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/watson.png" class="img-responsive" alt="IBM Watson">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/TEXchangeLogo.png" class="img-responsive" alt="TEXchange Logo">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/DataVisualization.png" class="img-responsive" alt="Data Visualization notebooks">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/searchEngines.png" class="img-responsive" alt="How Search Engines Work">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/MachineLearning.png" class="img-responsive" alt="Machine Learning notebooks">
-                    </a>
-                </div>
-            </div>
+
+    <section class="portfolio" id="skills" style="background: #18BC9C;">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Powered by the following Technologies</h2>
+        <section class="section skills" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(.694,0,.335,1) 0s, opacity 0.6s cubic-bezier(.694,0,.335,1) 0s; transition: transform 0.6s cubic-bezier(.694,0,.335,1) 0s, opacity 0.6s cubic-bezier(.694,0,.335,1) 0s; ">
+        <div class="skillz">
+          <br>
+         <div class="skillz__category">
+            <div class="skillz__category__label">Languages</div>
+            <ul>
+               <li class="skillz__category__item">Python</li>
+               <li class="skillz__category__item">JavaScript</li>
+               <li class="skillz__category__item">Java</li>
+               <li class="skillz__category__item">HTML</li>
+               <li class="skillz__category__item">CSS</li>
+               <li class="skillz__category__item">SQL</li>
+               <li class="skillz__category__item">Swift</li>
+               <li class="skillz__category__item">C++</li>
+               <li class="skillz__category__item">Bash</li>
+            </ul>
+         </div>
+         <div class="skillz__category">
+            <div class="skillz__category__label">Frameworks</div>
+            <ul>
+               <li class="skillz__category__item">AngularJS</li>
+               <li class="skillz__category__item">JQuery</li>
+               <li class="skillz__category__item">Bootstrap4</li>
+               <li class="skillz__category__item">Django/Flask</li>
+               <li class="skillz__category__item">Pandas</li>
+               <li class="skillz__category__item">BeautifulSoup</li>
+               <li class="skillz__category__item">Numpy</li>
+               <li class="skillz__category__item">Plotly</li>
+               <li class="skillz__category__item">SciKit-Learn</li>
+               <li class="skillz__category__item">Tensorflow</li>
+
+            </ul>
+         </div>
+         <div class="skillz__category">
+            <div class="skillz__category__label">Tools</div>
+            <ul>
+               <li class="skillz__category__item">Git &amp; Github</li>
+               <li class="skillz__category__item">Chrome DevTools</li>
+               <li class="skillz__category__item">Jupyter Notebooks</li>
+               <li class="skillz__category__item">Slack</li>
+               <li class="skillz__category__item">XML/JSON</li>
+               <li class="skillz__category__item">Atom</li>
+               <li class="skillz__category__item">PyCharm</li>
+               <li class="skillz__category__item">Dreamfactory</li>
+               <li class="skillz__category__item">GCP</li>
+
+            </ul>
+         </div>
+         <div class="skillz__category">
+            <div class="skillz__category__label">Concepts</div>
+            <ul>
+               <li class="skillz__category__item">Full Stack Web Development</li>
+               <li class="skillz__category__item">Data Science</li>
+               <li class="skillz__category__item">Applied Machine Learning</li>
+               <li class="skillz__category__item">Data Visualization</li>
+               <li class="skillz__category__item">Natural Language Processing</li>
+               <li class="skillz__category__item">Computer Vision</li>
+
+            </ul>
+         </div>
         </div>
+        </div>
+        </section>
+
+
+      </div>
     </section>
 
 
 
-    <!-- Featured Project Section -->
-    <section class = "contact" id="featuredProject">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Featured Project</h2>
-                    <hr class="star-primary">
-                    <h2>Coming soon!</h2>
-                </div>
-                <div>
 
-                </div>
-            </div>
+    <!-- Featured Project Section -->
+      <section class = "portfolio" id="portfolio">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2>Portfolio Highlights</h2>
+                      <hr class="star-dark mb-5">
+                  </div>
+              </div>
+              <div class="row">
+                <div class="row">
+                  <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                      <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                          <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                      </div>
+                          <img src="static/img/portfolio/watson.png" class="img-fluid" alt="IBM Watson">
+                      </a>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+                      <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                          <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                      </div>
+                          <img src="static/img/portfolio/TEXchangeLogo.png" class="img-fluid" alt="TEXchange Logo">
+                      </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+                      <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                          <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                      </div>
+                          <img src="static/img/portfolio/DataVisualization.png" class="img-fluid" alt="Data Visualization notebooks">
+                      </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+                      <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                          <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                      </div>
+                          <img src="static/img/portfolio/searchEngines.png" class="img-fluid" alt="How Search Engines Work">
+                      </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+                      <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                          <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                      </div>
+                          <img src="static/img/portfolio/MachineLearning.png" class="img-fluid" alt="Machine Learning notebooks">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </section>
 
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-
-                      <div class="col-lg- col-lg-offset-2 text-center">
-                          <a href="docs/AndrewLoutfiCV.pdf" class="btn btn-lg btn-outline" download>
-                              <h2><i class="fa fa-file-text"></i> My <br> Curriculum Vitae</h2></a>
-                      </div>
 
 
-
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h2>Connect with me around the Web.</h2>
-                        <ul class="list-inline">
-
-                            <li>
-                              <a href="https://www.linkedin.com/in/andrew-loutfi-280254127/" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/andrewoloutfi/" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/AndrewLoutfi?lang=en" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-
-
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                      <a href="https://github.com/loutan01" class="btn btn-lg btn-outline">
-                          <h2><i class="fa fa-fw fa-github"></i> My <br> Github</h2></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Andrew Omar Loutfi 2017.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
+    <footer class="footer text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-10 mb-lg-0">
+        <a href="static/docs/AndrewLoutfiResume.pdf" class="btn btn-lg btn-outline" style="color:white;"download >
+          <h4> My <i class="fa fa-file-text"></i><br>Resume</h4>
         </a>
+      </div>
+      <div class="col-md-4 mb-5 mb-lg-0">
+        <tr class="list-inline mb-0">
+          <td class="list-inline-item">
+            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/loutan01">
+              <i class="fa fa-fw fa-github"></i>
+            </a>
+          </td>
+          <td class="list-inline-item">
+            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/andrew-loutfi-280254127/">
+              <i class="fa fa-fw fa-linkedin"></i>
+            </a>
+          </td>
+
+        </tr>
+      </div>
+      <div class="col-md-4">
+        <tr class="list-inline mb-0">
+          <td class="list-inline-item">
+            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/andrewoloutfi/">
+              <i class="fa fa-fw fa-instagram"></i>
+            </a>
+          </td>
+          <td class="list-inline-item">
+            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/AndrewLoutfi?lang=en">
+              <i class="fa fa-fw fa-twitter"></i>
+            </a>
+          </td>
+        </tr>
+
+   </div>
     </div>
+  </div>
+</footer>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+
 
     <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Clinical Trial Matching (CTM) for IBM Watson</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/watson.png" class="img-responsive img-centered" alt="">
-                            <p>In January of 2016, I shadowed various team members of the IBM for Watson Clinical Trial Matching Software Development Team. Based at IBM's Rochester Minnesota campus, I was able to watch engineers collaborate about important implementation details and work in close conjunction with doctors from the Mayo Clinic. This was my first experience being immersed in the world of big data and commercial software development.</p>
-                            <ul class="list-inline item-details">
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="static/img/portfolio/watson.png" alt="">
+              <p>In January of 2016, I shadowed various team members of the IBM for Watson Clinical Trial Matching Software Development Team. Based at IBM's Rochester Minnesota campus, I was able to watch engineers collaborate about important implementation details and work in close conjunction with doctors from the Mayo Clinic. This was my first experience being immersed in the world of big data and commercial software development.</p>
+              <ul class="list-inline item-details">
 
-                                <li>
-                                  <a href="docs/AndrewLoutfiCTMReflection.pdf" class="btn btn-lg btn" rel="noopener noreferrer" target="_blank">
-                                      <h2><i class="fa fa-file-text"></i> Watson CTM <br> Reflection</h2></a>
-                                </li>
+                  <li>
+                    <a href="static/docs/AndrewLoutfiCTMReflection.pdf" class="btn btn-lg btn" rel="noopener noreferrer" target="_blank">
+                        <h2><i class="fa fa-file-text"></i> Watson CTM <br> Reflection</h2></a>
+                  </li>
 
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
+              </ul>
+                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>TEXchange</h2>
-                            <hr class="star-primary">
-
-                            <p>When students get their textbooks today, they have limited options to choose from, mainly campus and online bookstores.  According to Bureau of Labor Statistics data, over the last forty years textbook prices have risen at more than three times the rate of inflation. The focus of our project was to develop a tool that would give consumers of textbooks (students) more buying choices. We developed a tool called
- TEXchange which is a cross-platform web application that serves as an intermediary, enabling students to buy and sell their textbooks directly to and from each other. TEXchange is implemented with ease of access in mind so that it may be deployed quickly on any college or university campus in the United States. It is built on the cloud platform Dreamfactory that simplifies the building and maintaining of the three basic elements of a website: server, database, and user management.</p>
-                             <ul class="list-inline item-details">
-
-                                 <li>
-                                   <li>
-                                     <strong><a href="https://github.com/loutan01/TEXchange" class="btn btn-lg btn" rel="noopener noreferrer" target="_blank">
-                                         <h3><i class="fa fa-fw fa-github"></i> texchange <br> repository </h3></a></strong>
-
-
-                                   </li>
-
-                                 </li>
-                             </ul>
-
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Data Visualization Repository</h2>
-                            <hr class="star-primary">
-                           <p>Checkout my Data Visualization Notebooks on Github!</p>
-
-                            <ul class="list-inline item-details">
-                              <li>
-                                <a href="https://github.com/loutan01/DataVizNotebooks" class="btn btn-lg btn" rel="noopener noreferrer" target="_blank">
-                                    <h2><i class="fa fa-github"></i> Data Visualization <br> Repository</h2></a>
-                              </li>
-
-                            </ul>
-
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>How Search Engines Work</h2>
-                            <hr class="star-primary">
-                              <p>During Fall of 2016 I wrote a research paper titled "How Search Engines Work." This paper provides an overview of how the hypertextual search engine Google works, how it compares to other well known hypertextual search engines, and the future of searching beyond hypertext search engines. The paper was written using latex and can be found below.</p>
-                            <ul class="list-inline item-details">
-                              <li>
-                                <a href="docs/AndrewLoutfiSearchEngines.pdf" class="btn btn-lg btn" rel="noopener noreferrer" target="_blank">
-                                    <h2><i class="fa fa-file-text"></i> how <br> search engines <br> work</h2></a>
-                              </li>
-
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">TEXchange</h2>
+              <hr class="star-dark mb-5">
+              <hr class="star-primary">
+
+              <p>When students get their textbooks today, they have limited options to choose from, mainly campus and online bookstores.  According to Bureau of Labor Statistics data, over the last forty years textbook prices have risen at more than three times the rate of inflation. The focus of our project was to develop a tool that would give consumers of textbooks (students) more buying choices. We developed a tool called
+TEXchange which is a cross-platform web application that serves as an intermediary, enabling students to buy and sell their textbooks directly to and from each other. TEXchange is implemented with ease of access in mind so that it may be deployed quickly on any college or university campus in the United States. It is built on the cloud platform Dreamfactory that simplifies the building and maintaining of the three basic elements of a website: server, database, and user management.</p>
+               <ul class="list-inline item-details">
+
+                   <li>
+                     <li>
+                       <strong><a href="https://github.com/loutan01/TEXchange" class="btn btn-lg btn" rel="noopener noreferrer" target="_blank">
+                           <h3><i class="fa fa-fw fa-github"></i> texchange <br> repository </h3></a></strong>
+
+
+                     </li>
+
+                   </li>
+               </ul>
+                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Data Visualization Notebooks</h2>
+              <hr class="star-dark mb-5">
+              <hr class="star-primary">
+
+
+
+              <p>Checkout my Data Visualization Notebooks on Github!</p>
+
+               <ul class="list-inline item-details">
+                 <li>
+                   <a href="https://github.com/loutan01/DataVizNotebooks" class="btn btn-lg btn" rel="noopener noreferrer" target="_blank">
+                       <h2><i class="fa fa-github"></i> Data Visualization <br> Repository</h2></a>
+                 </li>
+
+               </ul>
+                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">How Search Engines Work</h2>
+              <hr class="star-dark mb-5">
+              <hr class="star-primary">
+
+
+
+              <p>During Fall of 2016 I wrote a research paper titled "How Search Engines Work." This paper provides an overview of how the hypertextual search engine Google works, how it compares to other well known hypertextual search engines, and the future of searching beyond hypertext search engines. The paper was written using latex and can be found below.</p>
+              <ul class="list-inline item-details">
+                <li>
+                  <a href="static/docs/AndrewLoutfiSearchEngines.pdf" class="btn btn-lg btn" rel="noopener noreferrer" target="_blank">
+                      <h2><i class="fa fa-file-text"></i> how <br> search engines <br> work</h2></a>
+                </li>
+
+              </ul>
+                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Machine Learning Repository</h2>
+              <hr class="star-dark mb-5">
+              <hr class="star-primary">
+
+              <p>Checkout my Machine Learning Notebooks on Github!</p>
+
+              <ul class="list-inline item-details">
+                <li>
+                  <a href="https://github.com/loutan01/MLNotebooks" class="btn btn-lg btn" rel="noopener noreferrer" target="_blank">
+                      <h2><i class="fa fa-github"></i> Machine Learning <br> Repository</h2></a>
+                </li>
+
+              </ul>
+
+
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="portfolio-modal modal fade" id="portfolio-modal-5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -431,16 +520,23 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="static/javascript/jquery.js"></script>
+    <script src="static/javascript/bootstrap.bundle.js"></script>
 
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="static/javascript/jquery.easing.js"></script>
+    <script src="static/javascript/jquery.magnific-popup.js"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="js/app.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="static/javascript/jqBootstrapValidation.js"></script>
+    <script src="static/javascript/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="static/javascript/freelancer.js"></script>
 
 </body>
 
-</html>
 
+</html>

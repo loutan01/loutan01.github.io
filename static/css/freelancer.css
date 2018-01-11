@@ -88,6 +88,7 @@ section {
   font-weight: 700;
   font-family: 'Montserrat'; }
   #mainNav .navbar-brand {
+    font-size: 1rem;
     color: #fff; }
   #mainNav .navbar-nav {
     margin-top: 1rem;
